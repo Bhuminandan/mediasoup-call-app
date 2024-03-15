@@ -57,6 +57,8 @@ app.get('/create-room', async (req, res) => {
     }
 });
 
+const connections = io.of('/mediasoup')
+
 module.exports= {
     io,
     expressServer,
